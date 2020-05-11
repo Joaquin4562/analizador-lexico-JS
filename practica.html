@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Analizador lexico</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row-md justify-content-around row justify-content-center">
+            <div class="col">
+                <h1 id="titulo-header">ANALIZADOR LEXICO</h1>
+            </div>
+            <div class="w-100"></div>
+                <a href="#" class="stretched-link link-pag" onclick="click_lexico()">Analizador lexico</a>
+                <a href="#" class="stretched-link link-pag" onclick="click_sintactico()">Analizador Sintactico</a>
+        </header>
+        <section class="contenedor-main row">
+            <main class="col-md-12">
+                <h3>Escribe tu codigo</h3>
+                <textarea id="area-texto" placeholder="type any text" oninput="analizarCodigo()"></textarea>
+                <button class="btn btn-analizar" onclick="">Analizar</button>
+            </main>
+        </section>
+        <section class="row tabla">
+            <table class="table table-hover" id="tabla">
+                <thead>
+                  <tr>
+                    <th scope="col">Token</th>
+                    <th scope="col">Lexema</th>
+                    <th scope="col">Index</th>
+                    <th scope="col">Linea</th>
+                  </tr>
+                </thead>
+              </table>
+        </section>
+        <footer class="row ">
+            <a href="https://github.com/Joaquin4562" class="col link-git">&copy; Github: Joaquin4562</a>
+        </footer>
+    </div>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/analizadorLexico/lexico.js"></script>
+</body>
+
+</html>
